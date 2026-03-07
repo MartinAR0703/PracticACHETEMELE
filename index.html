@@ -4,14 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi segunda pagina WEB</title>
-    <!-- Vinculamos el CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Esto es demaciado EPICO</h1>
+    <h1>Esto es demasiado EPICO</h1>
     <p>Esta página está hecha con HTML, CSS y JavaScript.</p>
     <button id="colorButton">Haz que el fondo cambie de color</button>
+
+    <!-- ── SECCIÓN EQUIPO ── -->
+    <section class="team-section">
+        <h2 class="team-title">Nuestro Equipo</h2>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+
+                <!-- Integrante 1 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="img\integranteLoro.jpg" alt="Foto integrante 1">
+                    </div>
+                    <p class="member-name">Loroenzo de Monteclaro</p>
+                    <span class="member-role">Desarrollador</span>
+                </div>
+
+                <!-- Integrante 2 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="img\integranteMartin.jpg" alt="Foto integrante 2">
+                    </div>
+                    <p class="member-name">Martin Arce Rodriguez</p>
+                    <span class="member-role">Diseñador</span>
+                </div>
+
+                <!-- Integrante 3 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="img\toucan-nature-background.jpg" alt="Foto integrante 3">
+                    </div>
+                    <p class="member-name">Tucando Di Caprio</p>
+                    <span class="member-role">Scrum Master</span>
+                </div>
+
+                <!-- Integrante 4 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="img\colibri_foto.jpg" alt="Foto integrante 4">
+                    </div>
+                    <p class="member-name">Colibri Cincuenta</p>
+                    <span class="member-role">QA Tester</span>
+                </div>
+
+            </div><!-- /carousel-track -->
+        </div><!-- /carousel-wrapper -->
+
+        <!-- Indicadores de puntos -->
+        <div class="dots" id="dotsContainer"></div>
+
+        <button id="nextMemberBtn" class="btn-team">
+            Conoce a todos los integrantes ›
+        </button>
+    </section>
 
     <script src="script.js"></script>
 </body>
